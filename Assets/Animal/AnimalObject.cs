@@ -27,7 +27,7 @@ public class AnimalObject : MonoBehaviour
     private StateMachine<AnimalObject> _stateMachine = null;
     [SerializeField]
     private float _speed = 5.0f;
-    
+    public bool enable = false;
 
     void Start()
     {
@@ -38,6 +38,16 @@ public class AnimalObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+    }
+    private void OnBecameVisible()
+    {
+        enable = true;
+     
+    }
+    private void OnBecameInVisible()
+    {
+        enable = false;
 
     }
     private void Move(bool bLeft)
@@ -81,10 +91,12 @@ public class AnimalObject : MonoBehaviour
         protected override void Begin()
         {
             Owner.ShowSprite(eSprite.Idle);
+            Owner.LookAt(true);
         }
         protected override void Update()
         {
-            if (Input.GetKey(KeyCode.T))
+            Owner.OnBecameVisible();
+            if (Owner.enable)
             {
                 Invoke<RunState>();
             }
@@ -127,7 +139,16 @@ public class AnimalObject : MonoBehaviour
         }
         protected override void Update()
         {
+            if (Owner.enable)
+            {
+                Owner.Move(true);
+                Owner.LookAt(true);
 
+            }
+            else
+            {
+                Invoke<IdleState>();
+            }
         }
         protected override void End()
         {
@@ -143,7 +164,16 @@ public class AnimalObject : MonoBehaviour
         }
         protected override void Update()
         {
+            if (Input.GetKey(KeyCode.T))
+            {
+                Owner.Move(true);
+                Owner.LookAt(true);
 
+            }
+            else
+            {
+                Invoke<IdleState>();
+            }
         }
         protected override void End()
         {
