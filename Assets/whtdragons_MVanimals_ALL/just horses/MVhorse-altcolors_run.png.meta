@@ -1,0 +1,2787 @@
+fileFormatVersion: 2
+guid: 026e983f32cf51743a59757231d2dea9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MVhorse-altcolors_run_0
+    21300002: MVhorse-altcolors_run_1
+    21300004: MVhorse-altcolors_run_2
+    21300006: MVhorse-altcolors_run_3
+    21300008: MVhorse-altcolors_run_4
+    21300010: MVhorse-altcolors_run_5
+    21300012: MVhorse-altcolors_run_6
+    21300014: MVhorse-altcolors_run_7
+    21300016: MVhorse-altcolors_run_8
+    21300018: MVhorse-altcolors_run_9
+    21300020: MVhorse-altcolors_run_10
+    21300022: MVhorse-altcolors_run_11
+    21300024: MVhorse-altcolors_run_12
+    21300026: MVhorse-altcolors_run_13
+    21300028: MVhorse-altcolors_run_14
+    21300030: MVhorse-altcolors_run_15
+    21300032: MVhorse-altcolors_run_16
+    21300034: MVhorse-altcolors_run_17
+    21300036: MVhorse-altcolors_run_18
+    21300038: MVhorse-altcolors_run_19
+    21300040: MVhorse-altcolors_run_20
+    21300042: MVhorse-altcolors_run_21
+    21300044: MVhorse-altcolors_run_22
+    21300046: MVhorse-altcolors_run_23
+    21300048: MVhorse-altcolors_run_24
+    21300050: MVhorse-altcolors_run_25
+    21300052: MVhorse-altcolors_run_26
+    21300054: MVhorse-altcolors_run_27
+    21300056: MVhorse-altcolors_run_28
+    21300058: MVhorse-altcolors_run_29
+    21300060: MVhorse-altcolors_run_30
+    21300062: MVhorse-altcolors_run_31
+    21300064: MVhorse-altcolors_run_32
+    21300066: MVhorse-altcolors_run_33
+    21300068: MVhorse-altcolors_run_34
+    21300070: MVhorse-altcolors_run_35
+    21300072: MVhorse-altcolors_run_36
+    21300074: MVhorse-altcolors_run_37
+    21300076: MVhorse-altcolors_run_38
+    21300078: MVhorse-altcolors_run_39
+    21300080: MVhorse-altcolors_run_40
+    21300082: MVhorse-altcolors_run_41
+    21300084: MVhorse-altcolors_run_42
+    21300086: MVhorse-altcolors_run_43
+    21300088: MVhorse-altcolors_run_44
+    21300090: MVhorse-altcolors_run_45
+    21300092: MVhorse-altcolors_run_46
+    21300094: MVhorse-altcolors_run_47
+    21300096: MVhorse-altcolors_run_48
+    21300098: MVhorse-altcolors_run_49
+    21300100: MVhorse-altcolors_run_50
+    21300102: MVhorse-altcolors_run_51
+    21300104: MVhorse-altcolors_run_52
+    21300106: MVhorse-altcolors_run_53
+    21300108: MVhorse-altcolors_run_54
+    21300110: MVhorse-altcolors_run_55
+    21300112: MVhorse-altcolors_run_56
+    21300114: MVhorse-altcolors_run_57
+    21300116: MVhorse-altcolors_run_58
+    21300118: MVhorse-altcolors_run_59
+    21300120: MVhorse-altcolors_run_60
+    21300122: MVhorse-altcolors_run_61
+    21300124: MVhorse-altcolors_run_62
+    21300126: MVhorse-altcolors_run_63
+    21300128: MVhorse-altcolors_run_64
+    21300130: MVhorse-altcolors_run_65
+    21300132: MVhorse-altcolors_run_66
+    21300134: MVhorse-altcolors_run_67
+    21300136: MVhorse-altcolors_run_68
+    21300138: MVhorse-altcolors_run_69
+    21300140: MVhorse-altcolors_run_70
+    21300142: MVhorse-altcolors_run_71
+    21300144: MVhorse-altcolors_run_72
+    21300146: MVhorse-altcolors_run_73
+    21300148: MVhorse-altcolors_run_74
+    21300150: MVhorse-altcolors_run_75
+    21300152: MVhorse-altcolors_run_76
+    21300154: MVhorse-altcolors_run_77
+    21300156: MVhorse-altcolors_run_78
+    21300158: MVhorse-altcolors_run_79
+    21300160: MVhorse-altcolors_run_80
+    21300162: MVhorse-altcolors_run_81
+    21300164: MVhorse-altcolors_run_82
+    21300166: MVhorse-altcolors_run_83
+    21300168: MVhorse-altcolors_run_84
+    21300170: MVhorse-altcolors_run_85
+    21300172: MVhorse-altcolors_run_86
+    21300174: MVhorse-altcolors_run_87
+    21300176: MVhorse-altcolors_run_88
+    21300178: MVhorse-altcolors_run_89
+    21300180: MVhorse-altcolors_run_90
+    21300182: MVhorse-altcolors_run_91
+    21300184: MVhorse-altcolors_run_92
+    21300186: MVhorse-altcolors_run_93
+    21300188: MVhorse-altcolors_run_94
+    21300190: MVhorse-altcolors_run_95
+    21300192: MVhorse-altcolors_run_96
+    21300194: MVhorse-altcolors_run_97
+    21300196: MVhorse-altcolors_run_98
+    21300198: MVhorse-altcolors_run_99
+    21300200: MVhorse-altcolors_run_100
+    21300202: MVhorse-altcolors_run_101
+    21300204: MVhorse-altcolors_run_102
+    21300206: MVhorse-altcolors_run_103
+    21300208: MVhorse-altcolors_run_104
+    21300210: MVhorse-altcolors_run_105
+    21300212: MVhorse-altcolors_run_106
+    21300214: MVhorse-altcolors_run_107
+    21300216: MVhorse-altcolors_run_108
+    21300218: MVhorse-altcolors_run_109
+    21300220: MVhorse-altcolors_run_110
+    21300222: MVhorse-altcolors_run_111
+    21300224: MVhorse-altcolors_run_112
+    21300226: MVhorse-altcolors_run_113
+    21300228: MVhorse-altcolors_run_114
+    21300230: MVhorse-altcolors_run_115
+    21300232: MVhorse-altcolors_run_116
+    21300234: MVhorse-altcolors_run_117
+    21300236: MVhorse-altcolors_run_118
+    21300238: MVhorse-altcolors_run_119
+    21300240: MVhorse-altcolors_run_120
+    21300242: MVhorse-altcolors_run_121
+    21300244: MVhorse-altcolors_run_122
+    21300246: MVhorse-altcolors_run_123
+    21300248: MVhorse-altcolors_run_124
+    21300250: MVhorse-altcolors_run_125
+    21300252: MVhorse-altcolors_run_126
+    21300254: MVhorse-altcolors_run_127
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 450
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc1202efcd9091408fce53d86b3682a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 452
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014ed531edd63f648a4d9254d320e00b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 451
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb442fc86c86af443924e5c892141bc8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 455
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f646136b56d1283408b1ce67941efe29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_4
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 450
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed3db34556ccf74988d769a86071278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 452
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835faefca7e12304c8eb8083e40717bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_6
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 451
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7a0645fdd9e8a41a960e2762ff8bde
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_7
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 455
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5dfe95fc8dcc8489594b60a5e74537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_8
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 450
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad01cf130e6f6b249a472e8f724fe3ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_9
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 452
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4f49cfaadc3b7488dbf081321e5f7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_10
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 451
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecad470a9700444bb99bf86400da856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_11
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 455
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c15955293435440b24e53e87d44f39
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_12
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 450
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0840341c6c7779f48ae8286ea3fed4fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_13
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 452
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d9300336852fa428fe86d18fb41925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_14
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 451
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcf8578f0f479d468be6c44b216b281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_15
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 455
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e77507e4274274c86ff2280f1c763f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 385
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef273cdcaae7c049adccfad1bd37c6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_17
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 384
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a7c0f76751e3c45a30f05a5420146f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_18
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 384
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac0332c93cd33743891d55651386502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_19
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 387
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1e0b7cca7761f44a5ae9513fb0bdf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_20
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 385
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8f0b5bb1854d34b96a3c9d6e6604d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_21
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 384
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1fdaa24d9e441d44a52bc47ecb60c90
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_22
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 384
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c518837ac3cd66f4d9018f6a42f98291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_23
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 387
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b28661156f4104a98b979c70bf16b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_24
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 385
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc4d58e7f339da409ab657cb152a8b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_25
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 384
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd47b9f989268bb4eb4e1e7839b87d59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_26
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 384
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec32cd1be8931a14dacfb1f5e8695273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_27
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 387
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de226345545a00419fef04b5eb63f41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_28
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 385
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75cd719e794926e47b1ba8e80b747622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_29
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 384
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276786b15e2ea53439774de605597d06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_30
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 384
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9843e44ae3f19144ba40bbf2a5440c66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_31
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 387
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533e8fe2e8033014796f9791f4cd0964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 321
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab0ca182fd4e71498d7f20645fa6b6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644374ef8c8984642a510c975b0ae3c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e8d90dcf384d74a86d39bd4b548a8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 323
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a3bd4eae57caf4db7d4d3aa570cc20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 321
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5cb0efbe6580c4c93ef78262268feb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e7bee451afd86469656457fe9163a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_38
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9adf0380454869942b55fabaf3cb5e6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_39
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 323
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73378b11f06b8f841a667614455f4d17
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_40
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 321
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e087f7f705150489a21c9ba27bd56d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_41
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 320
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bdfe4feb377b474ca0c63f83858f599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_42
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 320
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43f70446effab444b1336a9e7a0dc4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_43
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 323
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62388e2752865044d850399029c87787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_44
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 321
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e82e71ba14314847b308b8544a381a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_45
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 320
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b33836c8151f904fb441b91f2977e92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_46
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 320
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf9e3859cf24464f9c891ce84451d2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_47
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 323
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36701b9644f7eac4cba98b2d0d164a4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_48
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 261
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5a3278932d7334cb8ff3e5968bd8f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_49
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 259
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe7da48f8b2ebb4a8a921a12b809987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_50
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 263
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2f936b3263bf44a82634fb7faa2fa8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_51
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 263
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff1e5c187c97334f92bf79afb37e545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_52
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 261
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4552be3e852216f4a83a34e774d28667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_53
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 259
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2425784b4efaee24589e2afcc987f696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_54
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 263
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92669c5e811f86845bf508165fba3209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_55
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 263
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1feeec97f12758b4197ec94b5f95c18d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_56
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 261
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16444fe57e3554d4babcd241c537b176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_57
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 259
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa63926553cf49459315b34ad5f203f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_58
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 263
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731289d7c08b8fc4b9f738cff6ce2784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_59
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 263
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99cacff8526ac1d478d4d122ef839542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_60
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 261
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa6671acf147b64889d6c98a8909332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_61
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 259
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b32aee9753fbac4abe9ece1d61d77e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_62
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 263
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec7815100049e041908233866e4b7de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_63
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 263
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a8df3cb761f394399d6c9f209466d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_64
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 194
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc66716cf76d74249a83c4333ef967a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_65
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 196
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22d4001aa4cf9f489be6948328eb373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_66
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 195
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7279d3f78ee927f4b8c6c1f66d30876d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_67
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 199
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e5a59366f5d994daf186bc52a245de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_68
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 194
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74736e40adf111f489b14916eb9356c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_69
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 196
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b0be60234ae75458d212ba84499752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_70
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 195
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea2f1abcd4a75c488d2bc6def7b0680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_71
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 199
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e2814301474104a8e149e7e7cfe59d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_72
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 194
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9134eac1d67258848b6577faa6de785c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_73
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 196
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edc61dd4125f1c4891b2f90d087ddfc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_74
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 195
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6503efb4999d3f478f5119c251480a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_75
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 199
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79b48fd8d4b97b4b97ecd4684b41ef3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_76
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 194
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf83fe49cbcb6e47a45d75fd99967ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_77
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 196
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1d0ffcd42036c4b8a4c7fbb5e4be3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_78
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 195
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d1760d6bb8df04fb9a40c6a3aa738f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_79
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 199
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa4c470bb6306d42a3b4118523bfa64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_80
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 129
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42424dc2cad1364db8045f4adc650f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_81
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 128
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0549f44884b33641ab936ba611c8488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_82
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 128
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4263e7507871cd24bae89553e46f06a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_83
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 131
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5003de23d9cd0f64db2f5cd3852a03b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_84
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 129
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2388e6ce8a21cbd4e87dfefc3fe486de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_85
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 128
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddaa494b6111294c9e72e2d90ff3255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_86
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 128
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ebb5705ad95084ba92070836f6e342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_87
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 131
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f68de520eb9d34595a81f979923740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_88
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 129
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b070db54e7e0840be4f71e08d669c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_89
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 128
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678d31735329ed34f9bc150d76c5b12c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_90
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 128
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2c0423661e37b4cb9dbaa332dedb5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_91
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 131
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd20446e01f1f541b6a487a2f95e2f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_92
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 129
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6002414db371a48a487efcc07994ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_93
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 128
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d480ca814222f48860c1a589e40c60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_94
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 128
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576e985775595624781566824ed95f79
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_95
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 131
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310871318d4860f4fbdb0ed20148bd0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 65
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79440f2353effce4595c381779318af7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_97
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc419c5d54593c439487805df37fbe2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_98
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc93dd15d29cd55479ef6061d0615acc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_99
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 67
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6336c5ac0af84548bb8925d07ae5bbb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_100
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 65
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8024b54f4f2984092a3a2dc19bc5d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_101
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aae296c1453c094eb993af348e0c877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_102
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47f4d4d41e37564cb947d6e8d86de44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_103
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 67
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c705c9db2c54a2541962abcab005a307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_104
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 65
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78949bf61a39b2c40a78dfe328297ba8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_105
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee8c61ddadcfa544bea8841e0b9f935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_106
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3fd86183b838346bf4705c34ead470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_107
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 67
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7427900b835361244b0b0fcd98af99b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_108
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 65
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15fa261e3ab155a479cd50067fc7f023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_109
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 64
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0284a07f4e4001b488b98b9436fca22f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_110
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 64
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4460e52a669579a45967ccd76d4d2e13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_111
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 67
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8cf853ad7c9ca94bb094bec158ff5cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_112
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 5
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d645da04b58c2b240af18559f23a9f18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_113
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 3
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2915f879ff683a44187ea4a5315db5b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_114
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 7
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39048ef2bcda38244a88d0e68c772b17
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_115
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 7
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218242d0a749d1442848142aed7c0832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_116
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 5
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab304d05eb20884e83947f53175ffef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_117
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 3
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112d5e466ec692e4bacbb4e49e054f68
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_118
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 7
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32494ad4a7d909943bdb62fe403ba7c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_119
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 7
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0173f2bb15ec493448b969574d5a22e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_120
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 5
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f14089603d5412459c19c583f263c7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_121
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 3
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7a31b435d3343418891d46f5b47ae2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_122
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 7
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85293f0d2d0cd6a4993211438c87ece3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_123
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 7
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a6c4da2a2b0be4e9190cf6b6ccc842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_124
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 5
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f30faa14d568d4c9c04bc1378f0a90
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_125
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 3
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1f40091abc4234981d6135ddba39c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_126
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 7
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860736d0ab546b145bdae7b2f6eb02df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MVhorse-altcolors_run_127
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 7
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea8987a9419e1744bde71a66dd23c5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 776a3551478a91440bdc67d08912fcbf
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
