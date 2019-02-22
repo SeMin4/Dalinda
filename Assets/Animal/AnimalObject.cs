@@ -27,33 +27,35 @@ public class AnimalObject : MonoBehaviour
     private StateMachine<AnimalObject> _stateMachine = null;
     [SerializeField]
     private float _speed = 5.0f;
-    public bool enable = false;
+    private GameObject obj_player;
+    public float player_pos;
+    public float distance;
 
     void Start()
     {
         _stateMachine = new StateMachine<AnimalObject>(this);
         StartCoroutine(_stateMachine.Coroutine<IdleState>());
+        obj_player = GameObject.Find("Player1");
     }
 
     // Update is called once per frame
     void Update()
     {
+            player_pos = obj_player.transform.position.x;
+            distance = player_pos - transform.position.x;
+            // Debug.Log(distance);
+    }
 
+    void OnCollisionEnter2D(Collision2D other){
+        if(other.gameObject.tag == "Camera") {
+            Debug.Log("Camera");
+            Destroy(this.gameObject);
+        }
     }
-    private void OnBecameVisible()
-    {
-        enable = true;
-     
-    }
-    private void OnBecameInVisible()
-    {
-        enable = false;
 
-    }
     private void Move(bool bLeft)
     {
         _rigidbody.AddForce(new Vector2((bLeft ? -_speed : _speed), 0));
-
     }
     private void LookAt(bool bLeft)
     {
@@ -91,14 +93,13 @@ public class AnimalObject : MonoBehaviour
         protected override void Begin()
         {
             Owner.ShowSprite(eSprite.Idle);
-            Owner.LookAt(true);
         }
         protected override void Update()
         {
-            Owner.OnBecameVisible();
-            if (Owner.enable)
+            if (Owner.distance > -10)
             {
-                Invoke<RunState>();
+                Owner.LookAt(true);
+                Invoke<BarkState>();
             }
            
         }
@@ -115,15 +116,14 @@ public class AnimalObject : MonoBehaviour
         }
         protected override void Update()
         {
-            if (Input.GetKey(KeyCode.T))
+            if (Owner.distance < -9 && Owner.distance > -10)
             {
-                Owner.Move(true);
                 Owner.LookAt(true);
-                
+               // Invoke<RunState>();
             }
             else
             {
-                Invoke<IdleState>();
+                Invoke<RunState>();
             }
         }
         protected override void End()
@@ -139,16 +139,15 @@ public class AnimalObject : MonoBehaviour
         }
         protected override void Update()
         {
-            if (Owner.enable)
+            if (Owner.distance < -3 && Owner.distance > -9)
             {
                 Owner.Move(true);
                 Owner.LookAt(true);
-
-            }
-            else
+            }else
             {
-                Invoke<IdleState>();
+                Invoke<AttackState>();
             }
+            
         }
         protected override void End()
         {
@@ -164,13 +163,11 @@ public class AnimalObject : MonoBehaviour
         }
         protected override void Update()
         {
-            if (Input.GetKey(KeyCode.T))
+            if (Owner.distance > -3)
             {
                 Owner.Move(true);
                 Owner.LookAt(true);
-
-            }
-            else
+            }else
             {
                 Invoke<IdleState>();
             }
