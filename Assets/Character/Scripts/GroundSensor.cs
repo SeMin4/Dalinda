@@ -21,7 +21,7 @@ public class GroundSensor : MonoBehaviour{
         
     }
 
-    void OnTriggerEnter2D(Collider2D other){
+    /*void OnTriggerEnter2D(Collider2D other){
         if(other.tag == "Ground") {
             player.is_ground = true;
             player.jump_count = 0;
@@ -29,7 +29,7 @@ public class GroundSensor : MonoBehaviour{
         }
         if(other.tag == "Block")
             player.jump_count = 0;
-    }
+    }*/
     
     void OnTriggerStay2D(Collider2D other)
     {

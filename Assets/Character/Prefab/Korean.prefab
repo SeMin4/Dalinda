@@ -230,7 +230,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4600108861662545156}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdecf6076e3fa4e7eabe48b83886d19d, type: 3}
+  m_Script: {fileID: 11500000, guid: 343e9099170e9b640aa0581d050b47d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4600108861687719919
@@ -323,9 +323,8 @@ GameObject:
   - component: {fileID: 4600108862092380717}
   - component: {fileID: 4600108862092380715}
   - component: {fileID: 4600108862092380714}
-  - component: {fileID: 4600108862092380712}
   m_Layer: 9
-  m_Name: Player1
+  m_Name: Korean
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,23 +385,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.041904688, y: 0.25876188}
   m_Size: {x: 0.9188485, y: 1.3301783}
   m_Direction: 0
---- !u!114 &4600108862092380712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4600108862092380716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15d03c046578e476f93fdf09dc5d0f39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jump_count: 0
-  is_ground: 1
-  move_power: 5
-  jump_power: 12
-  jump: 2
 --- !u!1 &4600108862354365996
 GameObject:
   m_ObjectHideFlags: 0

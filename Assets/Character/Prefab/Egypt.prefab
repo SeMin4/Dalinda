@@ -208,7 +208,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.040010214, y: -0.11530113}
+  m_Offset: {x: -0.036173344, y: -0.11530113}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -219,7 +219,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0857034, y: 0.17946815}
+  m_Size: {x: 0.45446873, y: 0.17946815}
   m_EdgeRadius: 0
 --- !u!114 &4600108861662545155
 MonoBehaviour:
@@ -323,9 +323,8 @@ GameObject:
   - component: {fileID: 4600108862092380717}
   - component: {fileID: 4600108862092380715}
   - component: {fileID: 4600108862092380714}
-  - component: {fileID: 4600108862092380712}
   m_Layer: 9
-  m_Name: Player1
+  m_Name: Egypt
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -385,24 +384,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.041904688, y: 0.25876188}
   m_Size: {x: 0.9188485, y: 1.3301783}
   m_Direction: 0
---- !u!114 &4600108862092380712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4600108862092380716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fcb9465563e7314889a60ea2e382aac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jump_count: 0
-  is_ground: 1
-  is_direction_reverse: 0
-  move_power: 5
-  jump_power: 10
-  jump: 2
 --- !u!1 &4600108862354365996
 GameObject:
   m_ObjectHideFlags: 0

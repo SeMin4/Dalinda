@@ -62,6 +62,9 @@
      <Compile Include="Assets\Character\Scripts\CharacterBehavior.cs" />
      <Compile Include="Assets\Character\Scripts\Egypt.cs" />
      <Compile Include="Assets\Character\Scripts\GroundSensor.cs" />
+     <Compile Include="Assets\Character\Scripts\Player1.cs" />
+     <Compile Include="Assets\Character\Scripts\Player2.cs" />
+     <Compile Include="Assets\Character\Scripts\Skill.cs" />
      <Compile Include="Assets\rogue.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/SeMin/Documents/2D_Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
