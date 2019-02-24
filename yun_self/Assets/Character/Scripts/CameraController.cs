@@ -6,16 +6,11 @@ using System;
 public class CameraController : MonoBehaviour {
 
     public Transform edge;
-    private CharacterBehavior player;
 
     public GameObject Target;
-    public float PosY = 1;
+    public float PosY = 10;
     private bool camera_move = true;
 
-    void Awake()
-    {
-        player = this.transform.root.Find("Player1").GetComponent<CharacterBehavior>();
-    }
     void Start()
     {
         edge = this.transform.Find("LeftEdge");
@@ -34,24 +29,11 @@ public class CameraController : MonoBehaviour {
         // Debug.Log(prev_x_poisition - x_position);
         
         if(!camera_move){
-            if(player.is_ground){
-                Vector3 Targetpos = new Vector3(this.transform.position.x, Target.transform.position.y + PosY, -100);
-                transform.position = Vector3.Lerp(transform.position, Targetpos, Time.deltaTime * 4);
-             }else{
-                Vector3 Targetpos = new Vector3(this.transform.position.x, transform.position.y, -100);
-                transform.position = Vector3.Lerp(transform.position, Targetpos, Time.deltaTime * 1);
-             }
+            Vector3 Targetpos = new Vector3(this.transform.position.x, Target.transform.position.y + PosY, -100);
+            transform.position = Vector3.Lerp(transform.position, Targetpos, Time.deltaTime * 4); 
         }else {
-            if(player.is_ground){
-                Vector3 Targetpos = new Vector3(Target.transform.position.x+4, Target.transform.position.y + PosY, -100);
-                transform.position = Vector3.Lerp(transform.position, Targetpos, Time.deltaTime * 4);
-            }else{
-                Vector3 Targetpos = new Vector3(this.transform.position.x+4, transform.position.y, -100);
-                transform.position = Vector3.Lerp(transform.position, Targetpos, Time.deltaTime * 1);
-             }
+            Vector3 Targetpos = new Vector3(Target.transform.position.x+4, Target.transform.position.y + PosY, -100);
+            transform.position = Vector3.Lerp(transform.position, Targetpos, Time.deltaTime * 4);
         }
     }
-
-
-
 }

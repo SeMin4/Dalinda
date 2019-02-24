@@ -7,19 +7,20 @@ public class CharacterBehavior : MonoBehaviour
 {
     private CapsuleCollider2D _capsulle_collider;
     private Rigidbody2D _rigidbody;
-    private Animator _animator;
+
+    protected Animator _animator;
+    protected CharacterBehavior other_player;
     
     // status
     public int jump_count = 0;
-    
-    private bool is_sitting = false;
+    protected bool is_sitting = false;
     public bool is_ground = true;
 
     // for FixedUpdate
-    private bool update_jump = false;
-    private bool update_down_jump = false;
-    private bool update_left = false;
-    private bool update_right = false;
+    protected bool update_jump = false;
+    protected bool update_down_jump = false;
+    protected bool update_left = false;
+    protected bool update_right = false;
 
     // for skill effect
     public bool is_direction_reverse = false;
@@ -31,21 +32,13 @@ public class CharacterBehavior : MonoBehaviour
 
 
     // [Override Functions]
-
-    void Awake(){
-        
-    }
-
     void Start(){
         _animator = this.transform.Find("model").GetComponent<Animator>();
         _capsulle_collider = this.transform.GetComponent<CapsuleCollider2D>();
         _rigidbody = this.transform.GetComponent<Rigidbody2D>();
     }
     
-    void Update(){
-        UserInput();
-    }
-
+    
     // Physics engine Updates
     // Refer: https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html
     void FixedUpdate(){
@@ -56,94 +49,25 @@ public class CharacterBehavior : MonoBehaviour
 
     // void OnCollisionEnter2D(Collision2D other){
     //     if(other.gameObject.tag == "Ground") {
-    //         is_ground = true;
-    //         jump_count = 0;
-    //         Debug.Log("ground");
     //     }
     // }
 
     // void OnCollisionExit2D(Collision2D other){
     //     if(other.gameObject.tag == "Ground") {
-    //         is_ground = false;
-    //         Debug.Log("not ground");
     //     }
     // }
 
     // void OnTriggerEnter2D(Collider2D other){
-    //     //if (other.CompareTag("Ground")){}
+    //     if (other.CompareTag("Ground")){}
     // }
 
     // void OnTriggerExit2D(Collider2D other){
     //     //if (other.CompareTag("Ground")){}
     // }
 
-    // [Custom Functions]
     
-    
-    // UserInput: Animation Control by user input
-    void UserInput(){
-        AnimatorStateInfo anim_info = _animator.GetCurrentAnimatorStateInfo(0);
-
-        // TODO remove Die
-        if (Input.GetKey(KeyCode.Alpha1)){
-            _animator.Play("Die");
-        }
-
-        // die, do nothing
-        if(anim_info.IsName("Die"))
-            return;
-
-        // attack, do noting
-        if (anim_info.IsName("Attack"))
-            return;
-            
-        // sit control
-        if(Input.GetKeyDown(KeyCode.DownArrow)){
-            is_sitting = true;
-            _animator.Play("Sit");
-        }else if(Input.GetKeyUp(KeyCode.DownArrow)){
-            _animator.Play("Idle");
-            is_sitting = false;
-        }
-        
-        // move control
-        if(Input.GetKey(KeyCode.LeftArrow)){
-            if(is_ground)
-                _animator.Play("Run");
-            update_left = true;
-        }else if(Input.GetKey(KeyCode.RightArrow)){
-            if(is_ground)
-                _animator.Play("Run");
-            update_right = true;
-        }
-
-        // idle contorl
-        if(update_left == false && update_right == false)
-            if(is_ground && !is_sitting)
-                _animator.Play("Idle");
-            
-        // jump control
-        if(Input.GetKeyDown(KeyCode.Space)){
-            if(jump_count < jump){   // 0, 1
-                _animator.Play("Jump");
-                jump_count++;
-
-                if(is_sitting && !is_ground)
-                    update_down_jump = true;
-                else
-                    update_jump = true;
-            }
-        }
-
-        // attack control
-        if (Input.GetKey(KeyCode.Mouse0))
-            _animator.Play("Attack");
-    }
-
-
     // [Character control]
     // controlled in FixedUpdate because character has Rigidbody
-
     void Move(){
         Vector3 moveVelocity = Vector3.zero;
         
@@ -199,9 +123,8 @@ public class CharacterBehavior : MonoBehaviour
     }
 
 
-    IEnumerator GroundCapsulleColliderTimmerFuc()
-    {
-        yield return new WaitForSeconds(0.07f);
+    IEnumerator GroundCapsulleColliderTimmerFuc(){
         _capsulle_collider.enabled = true;
+        yield return new WaitForSeconds(0.07f);
     }
 }
