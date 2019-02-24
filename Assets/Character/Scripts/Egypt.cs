@@ -1,10 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Egypt : CharacterBehavior
+﻿public class Egypt : Skill
 {
-    void DirectionReverser(){
+    private CharacterBehavior me;
+    private CharacterBehavior other_player;
+
+    public Egypt(CharacterBehavior me, CharacterBehavior other){
+        this.me = me;
+        this.other_player = other;
+    }
+    // DirectionReverser
+    public void Skill1(){
+        other_player.is_direction_reverse = true;
+    }
+    public void Skill2(){
         
     }
+
+    
 }
