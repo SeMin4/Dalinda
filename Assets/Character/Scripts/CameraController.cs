@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour
     
     // skill for camera flip
     public bool camera_flip;
-
+    public float camera_x_position; 
     void Start()
     {
         edge = this.transform.Find("LeftEdge");
@@ -25,7 +25,8 @@ public class CameraController : MonoBehaviour
     {
         float x_position = Target.transform.position.x;
         float prev_x_poisition = edge.position.x;
-
+        camera_x_position = this.transform.position.x;
+       // Debug.Log(camera_x_position + Target.name);
         if (prev_x_poisition - x_position < -4.53)
             camera_move = true;
         else

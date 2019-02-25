@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GroundSensor : MonoBehaviour{
 
@@ -41,6 +42,8 @@ public class GroundSensor : MonoBehaviour{
         }
         if (other.tag == "Block")
             player.jump_count = 0;
+        if(other.tag == "Finish")
+            GameObject.Find("Canvas/FinishText").GetComponent<Text>().text = player.name + " win! !";
     }
 
     void OnTriggerExit2D(Collider2D other){
