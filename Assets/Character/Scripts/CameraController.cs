@@ -9,11 +9,16 @@ public class CameraController : MonoBehaviour
 
     public GameObject Target;
     public float PosY = 10;
-    private bool camera_move = true;
+    private bool camera_move;
+    
+    // skill for camera flip
+    public bool camera_flip;
 
     void Start()
     {
         edge = this.transform.Find("LeftEdge");
+        camera_flip = false;
+        camera_move = true;
     }
 
     void Update()
@@ -26,17 +31,23 @@ public class CameraController : MonoBehaviour
         else
             camera_move = false;
 
-         Debug.Log(prev_x_poisition - x_position);
+         //Debug.Log(prev_x_poisition - x_position);
 
         if (!camera_move)
         {
-            Vector3 Targetpos = new Vector3(this.transform.position.x, Target.transform.position.y + PosY, -100);
+            Vector3 Targetpos = new Vector3(this.transform.position.x, Target.transform.position.y + PosY, camera_flip ? 100 : -100);
             transform.position = Vector3.Lerp(transform.position, Targetpos, Time.deltaTime * 4);
         }
         else
         {
-            Vector3 Targetpos = new Vector3(Target.transform.position.x + 8, Target.transform.position.y + PosY, -100);
+            Vector3 Targetpos = new Vector3(Target.transform.position.x + 8, Target.transform.position.y + PosY, camera_flip ? 100 : -100);
             transform.position = Vector3.Lerp(transform.position, Targetpos, Time.deltaTime * 4);
+        }
+
+        if (camera_flip)
+        {
+            float speed = 5;
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 180, 180), speed * Time.deltaTime);
         }
     }
 }
