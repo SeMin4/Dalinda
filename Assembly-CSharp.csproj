@@ -75,6 +75,7 @@
      <Compile Include="Assets\CharacterSelect\P2_Selector.cs" />
      <Compile Include="Assets\CharacterSelect\PlayerSelect.cs" />
      <Compile Include="Assets\Scenes\gameStartButton.cs" />
+     <Compile Include="Assets\winner_text.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/SeMin/Documents/2D_Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
