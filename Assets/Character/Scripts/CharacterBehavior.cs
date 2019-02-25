@@ -15,6 +15,7 @@ public class CharacterBehavior : MonoBehaviour
     public Skill _skill;
     public bool is_skill;
 
+    public int _hp = 3 ;
    
     // status
     public int jump_count = 0;

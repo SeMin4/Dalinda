@@ -25,25 +25,31 @@ public class WeaponAttack : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other){
         if(other.gameObject.tag == "Enemy" && player.is_attacking) {
-            Destroy(other.gameObject);
-            Debug.Log("DELETE ENEMY");
+            
+            AnimalObject enemy = other.gameObject.GetComponent<AnimalObject>();
+            if(enemy._hp <= 0)
+                Destroy(other.gameObject);
+            else
+                enemy._hp--;
+            player.is_attacking = false;
+            
+            Debug.Log("E "+enemy._hp);
         }
     }
 
     void OnCollisionStay2D(Collision2D other){
-        if(other.gameObject.tag == "Enemy" && player.is_attacking) {
-            Destroy(other.gameObject);
-        }
+        
     }
 
     void OnCollisionExit2D(Collision2D other){
-        if(other.gameObject.tag == "Enemy") {
-        }
+        
     }
 
+    void Start(){
+        
+    }
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
