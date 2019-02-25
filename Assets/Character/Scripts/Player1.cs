@@ -17,7 +17,7 @@ public class Player1 : CharacterBehavior{
         }
 
         other_player = p2.transform.Find("Player2").GetComponent<CharacterBehavior>();
-        _skill = new Egypt(this, other_player);
+        _skill = new Egyptian(this, other_player);
     }
 
     void Update(){

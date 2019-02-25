@@ -2,29 +2,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class CharacterBehavior : MonoBehaviour
 {
     private CapsuleCollider2D _capsulle_collider;
     private Rigidbody2D _rigidbody;
 
-    protected Animator _animator;
+    public Animator _animator;
     protected CharacterBehavior other_player;
-    
+
+   
     // status
     public int jump_count = 0;
     protected bool is_sitting = false;
     public bool is_ground = true;
 
     // for FixedUpdate
-    protected bool update_jump = false;
+    public bool update_jump = false;
     protected bool update_down_jump = false;
     protected bool update_left = false;
     protected bool update_right = false;
 
     // for skill effect
     public bool is_direction_reverse = false;
-    
+
+
+    //tilemap & background for color black(skill effect)
+    public Tilemap _tilemap;
+    public SpriteRenderer _background;
+
+    //skill effect camera reverse
+    public Transform camera_transform;
+    public CameraController camera_controller;
+    //skill infinite jump
+    public bool skill_jump = false;
+
     [Header("[Setting]")]
     public float move_power = 5f;
     public float jump_power = 10f;
@@ -36,6 +49,13 @@ public class CharacterBehavior : MonoBehaviour
         _animator = this.transform.Find("model").GetComponent<Animator>();
         _capsulle_collider = this.transform.GetComponent<CapsuleCollider2D>();
         _rigidbody = this.transform.GetComponent<Rigidbody2D>();
+        
+        //skill black screen
+        _tilemap = this.transform.root.Find("Grid").Find("Ground").GetComponent<Tilemap>();
+        _background = this.transform.root.Find("Background").GetComponent<SpriteRenderer>();
+        //skill camera reverse
+        camera_transform = this.transform.root.Find("Camera").GetComponent<Transform>();
+        camera_controller = this.transform.root.Find("Camera").GetComponent<CameraController>();
     }
     
     
@@ -45,6 +65,7 @@ public class CharacterBehavior : MonoBehaviour
         Move();
         Jump();
         DownJump();
+        InfiniteJump();
     }
 
     // void OnCollisionEnter2D(Collision2D other){
@@ -124,7 +145,32 @@ public class CharacterBehavior : MonoBehaviour
 
 
     IEnumerator GroundCapsulleColliderTimmerFuc(){
+        yield return new WaitForSeconds(0.066f);
         _capsulle_collider.enabled = true;
-        yield return new WaitForSeconds(0.07f);
     }
+    private int infinite_jump_count = 0;
+    void InfiniteJump(){
+        if(!skill_jump)
+            return;
+        StartCoroutine(InfiniteJumpTimer());
+        if(infinite_jump_count > 100){
+            skill_jump = false;
+            infinite_jump_count = 0;
+        }
+    }
+    IEnumerator InfiniteJumpTimer(){
+        
+        if(is_ground)
+        {
+            update_jump = true;   
+            infinite_jump_count++;
+            jump_count = 1;
+            Debug.Log(infinite_jump_count);
+            _animator.Play("Jump");     
+        }
+        yield return new WaitUntil(() => is_ground);
+       
+        
+    }
+    
 }
