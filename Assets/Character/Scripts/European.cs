@@ -8,19 +8,24 @@ public class European :  Skill
 
     public European(CharacterBehavior me, CharacterBehavior other)
     {
+        skill_time = 10f;
         this.me = me;
         this.other_player = other;
     }
-    // DirectionReverser
-    public void Skill1()
+    // infinite jump
+    public override void Skill1(bool t)
     {
-        other_player.skill_jump = true;
+        if(t == true)
+            other_player.skill_jump = true;
+        else
+            other_player.skill_jump = false;
     }
  
-    public void Skill2()
-    {
+    // public override void Skill2(bool t)
+    // {
 
-    }
+    // }
+    
 
 
 }

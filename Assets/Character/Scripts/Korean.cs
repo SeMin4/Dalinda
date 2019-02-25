@@ -5,18 +5,22 @@
 
     public Korean(CharacterBehavior me, CharacterBehavior other)
     {
+        skill_time = 10f;
         this.me = me;
         this.other_player = other;
     }
-    // DirectionReverser
-    public void Skill1()
+    //  Speed up
+    public override void Skill1(bool t)
     {
-        me.move_power = 10f;
+        if(t)
+            me.move_power = 10f;
+        else
+            me.move_power = 5f;
     }
-    public void Skill2()
-    {
+    // public override void Skill2(bool t)
+    // {
 
-    }
+    // }
     
 
 }

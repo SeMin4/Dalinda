@@ -12,6 +12,9 @@ public class CharacterBehavior : MonoBehaviour
     public Animator _animator;
     protected CharacterBehavior other_player;
 
+    public Skill _skill;
+    public bool is_skill;
+
    
     // status
     public int jump_count = 0;
@@ -69,6 +72,7 @@ public class CharacterBehavior : MonoBehaviour
         Jump();
         DownJump();
         InfiniteJump();
+        SkillChecker();
     }
 
     // void OnCollisionEnter2D(Collision2D other){
@@ -152,7 +156,8 @@ public class CharacterBehavior : MonoBehaviour
         _capsulle_collider.enabled = true;
     }
     private int infinite_jump_count = 0;
-    void InfiniteJump(){
+
+    private void InfiniteJump(){
         if(!skill_jump)
             return;
         StartCoroutine(InfiniteJumpTimer());
@@ -168,12 +173,21 @@ public class CharacterBehavior : MonoBehaviour
             update_jump = true;   
             infinite_jump_count++;
             jump_count = 1;
-            Debug.Log(infinite_jump_count);
+            // Debug.Log(infinite_jump_count);
             _animator.Play("Jump");     
         }
         yield return new WaitUntil(() => is_ground);
-       
-        
     }
-    
+    private void SkillChecker(){
+        if(!is_skill)
+            return;
+        StartCoroutine(SkillTimer());
+    }
+
+    IEnumerator SkillTimer(){
+        yield return new WaitForSeconds(_skill.getTime());
+        Debug.Log ("Done. " + Time.time);
+        is_skill = false;
+        _skill.Skill1(false);
+    }
 }

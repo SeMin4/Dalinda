@@ -32,7 +32,7 @@ public class P1_Selector : MonoBehaviour
     }
 
     void Update(){
-        if(Input.GetKeyDown(KeyCode.RightArrow)){
+        if(Input.GetKeyDown(KeyCode.H)){
             _animators[idx].Play("Idle");
             idx = (idx+1) % count;
 
@@ -41,7 +41,7 @@ public class P1_Selector : MonoBehaviour
         }
         _camera.transform.position = Vector3.MoveTowards(_camera.transform.position, Targetpos, Time.deltaTime * 35);
 
-        if(Input.GetKeyDown(KeyCode.L)){
+        if(Input.GetKeyDown(KeyCode.Q)){
             _animators[idx].Play("Attack");
             GameSetting.selec_p1 = idx;
         }

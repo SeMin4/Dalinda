@@ -4,20 +4,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player1 : CharacterBehavior{
-    private Skill _skill;
+    
 
     void Awake(){
-        GameObject p2 = null;
+        GameObject p1 = null;
         GameObject[] rootObjects = UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects();
         foreach (GameObject i in rootObjects){
             if(i.name == "P2"){
-                p2 = i;
+                p1 = i;
                 break;
             }
         }
 
-        other_player = p2.transform.Find("Player2").GetComponent<CharacterBehavior>();
-        int type = GameSetting.selec_p1;
+        other_player = p1.transform.Find("Player2").GetComponent<CharacterBehavior>();
+        // TODO
+         int type = GameSetting.selec_p1;
         switch(type)
         {
             case 0 : _skill = new European(this,other_player);
@@ -27,10 +28,12 @@ public class Player1 : CharacterBehavior{
             default:
             break;           
         }
+        
     }
 
     void Update(){
         UserInput();
+        
     }
 
     void UserInput(){
@@ -50,20 +53,20 @@ public class Player1 : CharacterBehavior{
             return;
             
         // sit control
-        if(Input.GetKeyDown(KeyCode.DownArrow)){
+        if(Input.GetKeyDown(KeyCode.G)){
             is_sitting = true;
             _animator.Play("Sit");
-        }else if(Input.GetKeyUp(KeyCode.DownArrow)){
+        }else if(Input.GetKeyUp(KeyCode.G)){
             _animator.Play("Idle");
             is_sitting = false;
         }
         
         // move control
-        if(Input.GetKey(KeyCode.LeftArrow)){
+        if(Input.GetKey(KeyCode.F)){
             if(is_ground)
                 _animator.Play("Run");
             update_left = true;
-        }else if(Input.GetKey(KeyCode.RightArrow)){
+        }else if(Input.GetKey(KeyCode.H)){
             if(is_ground)
                 _animator.Play("Run");
             update_right = true;
@@ -75,7 +78,7 @@ public class Player1 : CharacterBehavior{
                 _animator.Play("Idle");
             
         // jump control
-        if(Input.GetKeyDown(KeyCode.UpArrow)){
+        if(Input.GetKeyDown(KeyCode.Q)){
             if(jump_count < jump){   // 0, 1
                 _animator.Play("Jump");
                 jump_count++;
@@ -88,19 +91,20 @@ public class Player1 : CharacterBehavior{
         }
 
         // attack control
-        if (Input.GetKey(KeyCode.L))
+        if (Input.GetKey(KeyCode.W))
             _animator.Play("Attack");
 
         // Skill 1
-        if (Input.GetKey(KeyCode.Semicolon)){
+        if (Input.GetKey(KeyCode.E)){
             _animator.Play("Attack");
-            _skill.Skill1();
+            is_skill = true;
+            _skill.Skill1(true);
         }
 
         // Skill 2
-        if (Input.GetKey(KeyCode.DoubleQuote)){
-            _animator.Play("Attack");
-            _skill.Skill2();
-        }
+        // if (Input.GetKey(KeyCode.E)){
+        //     _animator.Play("Attack");
+        //     _skill.Skill2();
+        // }
     }
 }
