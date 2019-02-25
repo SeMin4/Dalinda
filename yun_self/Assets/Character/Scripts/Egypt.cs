@@ -9,11 +9,24 @@
     }
     // DirectionReverser
     public void Skill1(){
-        other_player.is_direction_reverse = true;
+        // _delegate c = new _delegate(counter);
+
+        // Jumper(c);
     }
     public void Skill2(){
         
     }
+
+    // delegate int _delegate();
+    // private int counter(int i){
+    //     return i++;
+    // }
+
+    // private void Jumper(_delegate c){
+    //     other_player.jump_count++;
+    //     other_player.update_jump = true;
+
+    // }
 
     
 }

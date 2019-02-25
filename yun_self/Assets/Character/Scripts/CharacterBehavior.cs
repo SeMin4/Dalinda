@@ -14,10 +14,10 @@ public class CharacterBehavior : MonoBehaviour
     // status
     public int jump_count = 0;
     protected bool is_sitting = false;
-    public bool is_ground = true;
+    public bool is_ground = false;
 
     // for FixedUpdate
-    protected bool update_jump = false;
+    public bool update_jump = false;
     protected bool update_down_jump = false;
     protected bool update_left = false;
     protected bool update_right = false;
@@ -37,7 +37,6 @@ public class CharacterBehavior : MonoBehaviour
         _capsulle_collider = this.transform.GetComponent<CapsuleCollider2D>();
         _rigidbody = this.transform.GetComponent<Rigidbody2D>();
     }
-    
     
     // Physics engine Updates
     // Refer: https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html
@@ -124,7 +123,8 @@ public class CharacterBehavior : MonoBehaviour
 
 
     IEnumerator GroundCapsulleColliderTimmerFuc(){
+        yield return new WaitForSeconds(0.066f);
         _capsulle_collider.enabled = true;
-        yield return new WaitForSeconds(0.07f);
+        
     }
 }

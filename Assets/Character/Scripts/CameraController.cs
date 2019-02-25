@@ -5,7 +5,6 @@ using System;
 
 public class CameraController : MonoBehaviour
 {
-
     public Transform edge;
 
     public GameObject Target;
