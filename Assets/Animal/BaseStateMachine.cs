@@ -13,7 +13,7 @@ namespace Lofle
 		private Type _currentStateType = null;
 		private BASE_STATE_TYPE _currentState = null;
 		private Dictionary<Type, BASE_STATE_TYPE> _stateDic = new Dictionary<Type, BASE_STATE_TYPE>();
-		private Coroutine _coroutine = null;
+		// private Coroutine _coroutine = null;
 
 		protected BASE_STATE_TYPE CurrentState { get { return _currentState; } }
 

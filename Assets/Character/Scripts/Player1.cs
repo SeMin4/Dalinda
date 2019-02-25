@@ -18,7 +18,8 @@ public class Player1 : CharacterBehavior{
 
         other_player = p1.transform.Find("Player2").GetComponent<CharacterBehavior>();
         // TODO
-         int type = GameSetting.selec_p1;
+        int type = 1;//GameSetting.selec_p1;
+
         switch(type)
         {
             case 0 : _skill = new European(this,other_player);
@@ -33,7 +34,6 @@ public class Player1 : CharacterBehavior{
 
     void Update(){
         UserInput();
-        
     }
 
     void UserInput(){
@@ -62,14 +62,26 @@ public class Player1 : CharacterBehavior{
         }
         
         // move control
-        if(Input.GetKey(KeyCode.F)){
-            if(is_ground)
-                _animator.Play("Run");
-            update_left = true;
-        }else if(Input.GetKey(KeyCode.H)){
-            if(is_ground)
-                _animator.Play("Run");
-            update_right = true;
+        if(!is_direction_reverse){
+            if(Input.GetKey(KeyCode.F)){
+                if(is_ground)
+                    _animator.Play("Run");
+                update_left = true;
+            }else if(Input.GetKey(KeyCode.H)){
+                if(is_ground)
+                    _animator.Play("Run");
+                update_right = true;
+            }
+        }else{
+            if(Input.GetKey(KeyCode.T)){
+                if(is_ground)
+                    _animator.Play("Run");
+                update_left = true;
+            }else if(Input.GetKey(KeyCode.G)){
+                if(is_ground)
+                    _animator.Play("Run");
+                update_right = true;
+            }
         }
 
         // idle contorl
@@ -91,14 +103,17 @@ public class Player1 : CharacterBehavior{
         }
 
         // attack control
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W)){
             _animator.Play("Attack");
+            is_attacking = true;
+            StartCoroutine(AttackTimer());
+        }
 
         // Skill 1
         if (Input.GetKey(KeyCode.E)){
             _animator.Play("Attack");
-            is_skill = true;
             _skill.Skill1(true);
+            StartCoroutine(SkillTimer());
         }
 
         // Skill 2
@@ -107,4 +122,5 @@ public class Player1 : CharacterBehavior{
         //     _skill.Skill2();
         // }
     }
+    
 }

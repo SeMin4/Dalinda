@@ -35,10 +35,15 @@ public class P1_Selector : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.H)){
             _animators[idx].Play("Idle");
             idx = (idx+1) % count;
-
             _animators[idx].Play("Run");
-            Targetpos = new Vector3(_targets[idx].transform.position.x, _targets[idx].transform.position.y + PosY, -100);
         }
+        if(Input.GetKeyDown(KeyCode.F)){
+            _animators[idx].Play("Idle");
+            idx = (idx+count-1) % count;
+            _animators[idx].Play("Run");
+        }
+
+        Targetpos = new Vector3(_targets[idx].transform.position.x, _targets[idx].transform.position.y + PosY, -100);
         _camera.transform.position = Vector3.MoveTowards(_camera.transform.position, Targetpos, Time.deltaTime * 35);
 
         if(Input.GetKeyDown(KeyCode.Q)){

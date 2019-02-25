@@ -16,7 +16,7 @@ public class Player2 : CharacterBehavior{
         }
 
         other_player = p2.transform.Find("Player1").GetComponent<CharacterBehavior>();
-        int type = GameSetting.selec_p2;
+        int type = 0;//GameSetting.selec_p2;
         switch(type)
         {
             case 0 : _skill = new European(this,other_player);
@@ -59,14 +59,26 @@ public class Player2 : CharacterBehavior{
         }
         
         // move control
-        if(Input.GetKey(KeyCode.LeftArrow)){
-            if(is_ground)
-                _animator.Play("Run");
-            update_left = true;
-        }else if(Input.GetKey(KeyCode.RightArrow)){
-            if(is_ground)
-                _animator.Play("Run");
-            update_right = true;
+        if(!is_direction_reverse){
+            if(Input.GetKey(KeyCode.LeftArrow)){
+                if(is_ground)
+                    _animator.Play("Run");
+                update_left = true;
+            }else if(Input.GetKey(KeyCode.RightArrow)){
+                if(is_ground)
+                    _animator.Play("Run");
+                update_right = true;
+            }
+        }else{
+            if(Input.GetKey(KeyCode.UpArrow)){
+                if(is_ground)
+                    _animator.Play("Run");
+                update_left = true;
+            }else if(Input.GetKey(KeyCode.DownArrow)){
+                if(is_ground)
+                    _animator.Play("Run");
+                update_right = true;
+            }
         }
 
         // idle contorl
@@ -88,14 +100,17 @@ public class Player2 : CharacterBehavior{
         }
 
         // attack control
-        if (Input.GetKey(KeyCode.Semicolon))
+        if (Input.GetKey(KeyCode.Semicolon)){
             _animator.Play("Attack");
+            is_attacking = true;
+            StartCoroutine(AttackTimer());
+        }
 
         // Skill 1
         if (Input.GetKey(KeyCode.Quote)){
             _animator.Play("Attack");
-            is_skill = true;
             _skill.Skill1(true);
+            StartCoroutine(SkillTimer());
         }
 
         // Skill 2

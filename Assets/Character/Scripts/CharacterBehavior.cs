@@ -19,7 +19,8 @@ public class CharacterBehavior : MonoBehaviour
     // status
     public int jump_count = 0;
     protected bool is_sitting = false;
-    public bool is_ground = true;
+    public bool is_ground;
+    public bool is_attacking;
 
     // for FixedUpdate
     public bool update_jump = false;
@@ -29,7 +30,6 @@ public class CharacterBehavior : MonoBehaviour
 
     // for skill effect
     public bool is_direction_reverse = false;
-
 
     //tilemap & background for color black(skill effect)
     public Tilemap _tilemap;
@@ -72,18 +72,10 @@ public class CharacterBehavior : MonoBehaviour
         Jump();
         DownJump();
         InfiniteJump();
-        SkillChecker();
+        
     }
 
-    // void OnCollisionEnter2D(Collision2D other){
-    //     if(other.gameObject.tag == "Ground") {
-    //     }
-    // }
-
-    // void OnCollisionExit2D(Collision2D other){
-    //     if(other.gameObject.tag == "Ground") {
-    //     }
-    // }
+    
 
     // void OnTriggerEnter2D(Collider2D other){
     //     if (other.CompareTag("Ground")){}
@@ -100,22 +92,11 @@ public class CharacterBehavior : MonoBehaviour
         Vector3 moveVelocity = Vector3.zero;
         
         if(update_left){
-            if(is_direction_reverse){
-                moveVelocity = Vector3.right;
-                transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 180, transform.rotation.z));
-            }else{
-                moveVelocity = Vector3.left;
-                transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0, transform.rotation.z));
-            }
-            
+            moveVelocity = Vector3.left;
+            transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0, transform.rotation.z));
         }else if(update_right){
-            if(is_direction_reverse){
-                moveVelocity = Vector3.left;
-                transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0, transform.rotation.z));
-            }else{
-                moveVelocity = Vector3.right;
-                transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 180, transform.rotation.z));
-            }
+            moveVelocity = Vector3.right;
+            transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 180, transform.rotation.z));
         }
         transform.position += moveVelocity * move_power * Time.deltaTime;
         
@@ -127,7 +108,6 @@ public class CharacterBehavior : MonoBehaviour
         if(!update_jump)
             return;
 
-        // Prevent Velocity amplification
         _rigidbody.velocity = Vector2.zero;
 
         Vector2 jumpVelocity = new Vector2(0, jump_power);
@@ -150,7 +130,6 @@ public class CharacterBehavior : MonoBehaviour
         update_down_jump = false;
     }
 
-
     IEnumerator GroundCapsulleColliderTimmerFuc(){
         yield return new WaitForSeconds(0.066f);
         _capsulle_collider.enabled = true;
@@ -167,7 +146,6 @@ public class CharacterBehavior : MonoBehaviour
         }
     }
     IEnumerator InfiniteJumpTimer(){
-        
         if(is_ground)
         {
             update_jump = true;   
@@ -178,16 +156,14 @@ public class CharacterBehavior : MonoBehaviour
         }
         yield return new WaitUntil(() => is_ground);
     }
-    private void SkillChecker(){
-        if(!is_skill)
-            return;
-        StartCoroutine(SkillTimer());
+
+    protected IEnumerator SkillTimer(){
+        yield return new WaitForSeconds(_skill.getTime());
+        _skill.Skill1(false);
     }
 
-    IEnumerator SkillTimer(){
-        yield return new WaitForSeconds(_skill.getTime());
-        Debug.Log ("Done. " + Time.time);
-        is_skill = false;
-        _skill.Skill1(false);
+    protected IEnumerator AttackTimer(){
+        yield return new WaitForSeconds(1f);
+        is_attacking = false;
     }
 }
