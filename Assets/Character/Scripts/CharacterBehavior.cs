@@ -30,7 +30,7 @@ public class CharacterBehavior : MonoBehaviour
 
     //tilemap & background for color black(skill effect)
     public Tilemap _tilemap;
-    public SpriteRenderer _background;
+    public SpriteRenderer[] _background;
 
     //skill effect camera reverse
     public Transform camera_transform;
@@ -49,10 +49,13 @@ public class CharacterBehavior : MonoBehaviour
         _animator = this.transform.Find("model").GetComponent<Animator>();
         _capsulle_collider = this.transform.GetComponent<CapsuleCollider2D>();
         _rigidbody = this.transform.GetComponent<Rigidbody2D>();
-        
+       
         //skill black screen
-        _tilemap = this.transform.root.Find("Grid").Find("Ground").GetComponent<Tilemap>();
-        _background = this.transform.root.Find("Background").GetComponent<SpriteRenderer>();
+        _tilemap = this.transform.root.Find("map").Find("tile").Find("ground").GetComponent<Tilemap>();
+        _background = new SpriteRenderer[3];
+        _background[0] = this.transform.root.Find("map").Find("BG").Find("Background1").GetComponent<SpriteRenderer>();
+        _background[1] = this.transform.root.Find("map").Find("BG").Find("Background2").GetComponent<SpriteRenderer>();
+        _background[2] = this.transform.root.Find("map").Find("BG").Find("Background3").GetComponent<SpriteRenderer>();
         //skill camera reverse
         camera_transform = this.transform.root.Find("Camera").GetComponent<Transform>();
         camera_controller = this.transform.root.Find("Camera").GetComponent<CameraController>();

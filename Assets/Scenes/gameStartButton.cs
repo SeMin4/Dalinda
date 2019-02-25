@@ -16,7 +16,7 @@ public class gameStartButton : MonoBehaviour
         Invoke("startgame",.3f);
     }
     private void startgame(){
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("SelectScene");
     }
     
     void Update()

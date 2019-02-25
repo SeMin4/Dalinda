@@ -17,7 +17,16 @@ public class Player1 : CharacterBehavior{
         }
 
         other_player = p2.transform.Find("Player2").GetComponent<CharacterBehavior>();
-        _skill = new Egyptian(this, other_player);
+        int type = GameSetting.selec_p1;
+        switch(type)
+        {
+            case 0 : _skill = new European(this,other_player);
+            break;
+            case 1 : _skill = new Korean(this,other_player);
+            break;
+            default:
+            break;           
+        }
     }
 
     void Update(){
