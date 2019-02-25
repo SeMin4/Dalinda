@@ -15,6 +15,7 @@ public class AudioScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Destroy(GameObject.Find("Audio"));
         m_MyAudioSource = GetComponent<AudioSource>();
         m_play1 = true;
     }
