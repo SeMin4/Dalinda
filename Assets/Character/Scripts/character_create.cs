@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class character_create : MonoBehaviour
 {
@@ -21,6 +23,10 @@ public class character_create : MonoBehaviour
         Player2.name = "Player2"; // name을 변경
         Player2.transform.parent = GameObject.Find("P2").transform;
         Player2.AddComponent<Player2>();
+        //joohan 추가
+        GameObject.Find("Canvas/restartButton").GetComponent<Image>().enabled = false;
+        GameObject.Find("Canvas/restartButton").GetComponent<Button>().enabled = false;
+        GameObject.Find("Canvas/restartButton/Text").GetComponent<Text>().enabled = false;
     }
     
     
