@@ -92,18 +92,24 @@ public class Player1 : CharacterBehavior{
     IEnumerator CheckMp() {
         while (true) {
             switch(_mp){
-                case 0:
+               case 0:
                     gifts[0].enabled = false;
                     gifts[1].enabled = false;
                     gifts[2].enabled = false;
                     break;
                 case 1:
                     gifts[0].enabled = true;
+                    gifts[1].enabled = false;
+                    gifts[2].enabled = false;
                     break;
                 case 2:
+                    gifts[0].enabled = true;
                     gifts[1].enabled = true;
+                    gifts[2].enabled = false;
                     break;
                 case 3:
+                    gifts[0].enabled = true;
+                    gifts[1].enabled = true;
                     gifts[2].enabled = true;
                     break;
                 default: break;

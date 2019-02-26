@@ -37,14 +37,14 @@ public class Player2 : CharacterBehavior{
             break;           
         }
         hearts = new Image[3];
-        hearts[0] = GameObject.Find("Canvas/P1/P1_heart/P1_heart1").GetComponent<Image>();
-        hearts[1] = GameObject.Find("Canvas/P1/P1_heart/P1_heart2").GetComponent<Image>();
-        hearts[2] = GameObject.Find("Canvas/P1/P1_heart/P1_heart3").GetComponent<Image>();
+        hearts[0] = GameObject.Find("Canvas/P2/P2_heart/P2_heart1").GetComponent<Image>();
+        hearts[1] = GameObject.Find("Canvas/P2/P2_heart/P2_heart2").GetComponent<Image>();
+        hearts[2] = GameObject.Find("Canvas/P2/P2_heart/P2_heart3").GetComponent<Image>();
 
         gifts = new Image[3];
-        gifts[0] = GameObject.Find("Canvas/P1/P1_skill/P1_skillt1").GetComponent<Image>();
-        gifts[1] = GameObject.Find("Canvas/P1/P1_skill/P1_skillt2").GetComponent<Image>();
-        gifts[2] = GameObject.Find("Canvas/P1/P1_skill/P1_skillt3").GetComponent<Image>();
+        gifts[0] = GameObject.Find("Canvas/P2/P2_skill/P2_skillt1").GetComponent<Image>();
+        gifts[1] = GameObject.Find("Canvas/P2/P2_skill/P2_skillt2").GetComponent<Image>();
+        gifts[2] = GameObject.Find("Canvas/P2/P2_skill/P2_skillt3").GetComponent<Image>();
 
         StartCoroutine(CheckDie());
         StartCoroutine(CheckHp());
@@ -98,11 +98,17 @@ public class Player2 : CharacterBehavior{
                     break;
                 case 1:
                     gifts[0].enabled = true;
+                    gifts[1].enabled = false;
+                    gifts[2].enabled = false;
                     break;
                 case 2:
+                    gifts[0].enabled = true;
                     gifts[1].enabled = true;
+                    gifts[2].enabled = false;
                     break;
                 case 3:
+                    gifts[0].enabled = true;
+                    gifts[1].enabled = true;
                     gifts[2].enabled = true;
                     break;
                 default: break;
@@ -116,12 +122,12 @@ public class Player2 : CharacterBehavior{
         if(other.gameObject.tag == "Enemy" && one) {
             _hp--;
             StartCoroutine(BeatTimer());
-            Debug.Log("P2 "+_hp);
+            Debug.Log("P2 hp"+_hp);
         }
         if(other.gameObject.tag == "Gift"){
             _mp++;
             Destroy(other.gameObject);
-            Debug.Log("P2 "+_mp);
+            Debug.Log("P2 mp"+_mp);
         }
     }
     protected IEnumerator BeatTimer(){
@@ -200,7 +206,7 @@ public class Player2 : CharacterBehavior{
 
         // Skill 1
         if (Input.GetKey(KeyCode.Quote)){
-            if(is_skill)
+            if(is_skill || _mp <= 0)
                 return;
             _mp--;
             is_skill = true;
