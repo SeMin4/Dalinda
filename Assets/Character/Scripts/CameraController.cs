@@ -10,12 +10,17 @@ public class CameraController : MonoBehaviour
     public GameObject Target;
     public float PosY = 10;
     private bool camera_move;
-    
+
     // skill for camera flip
     public bool camera_flip;
-    public float camera_x_position; 
+    public float camera_x_position;
+
     void Start()
     {
+        if(this.transform.root.name == "P1")
+            Target = GameObject.Find("P1/Player1");
+        else if(this.transform.root.name == "P2")
+            Target = GameObject.Find("P2/Player2");
         edge = this.transform.Find("LeftEdge");
         camera_flip = false;
         camera_move = true;
@@ -25,14 +30,16 @@ public class CameraController : MonoBehaviour
     {
         float x_position = Target.transform.position.x;
         float prev_x_poisition = edge.position.x;
-        camera_x_position = this.transform.position.x;
-       // Debug.Log(camera_x_position + Target.name);
-        if (prev_x_poisition - x_position < -4.53)
+
+        if (prev_x_poisition - x_position < -5.8)
             camera_move = true;
         else
             camera_move = false;
 
-         //Debug.Log(prev_x_poisition - x_position);
+        if (Target.GetComponent<CharacterBehavior>().cam)
+            camera_move = true;
+
+        //Debug.Log(prev_x_poisition - x_position);
 
         if (!camera_move)
         {
@@ -45,10 +52,12 @@ public class CameraController : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, Targetpos, Time.deltaTime * 4);
         }
 
-        if (camera_flip)
-        {
+        if (camera_flip){
             float speed = 5;
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 180, 180), speed * Time.deltaTime);
+        }else{
+            float speed = 5;
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, 0), speed * Time.deltaTime);
         }
     }
 }

@@ -15,8 +15,8 @@ public class CharacterBehavior : MonoBehaviour
     public Skill _skill;
     public bool is_skill;
 
-    public int _hp = 3 ;
-   
+    public int _hp = 3;
+
     // status
     public int jump_count = 0;
     protected bool is_sitting = false;
@@ -31,6 +31,7 @@ public class CharacterBehavior : MonoBehaviour
 
     // for skill effect
     public bool is_direction_reverse = false;
+    public bool camera_flip;
 
     //tilemap & background for color black(skill effect)
     public Tilemap _tilemap;
@@ -49,11 +50,12 @@ public class CharacterBehavior : MonoBehaviour
 
 
     // [Override Functions]
-    void Start(){
+    void OnEnable()
+    {
         _animator = this.transform.Find("model").GetComponent<Animator>();
         _capsulle_collider = this.transform.GetComponent<CapsuleCollider2D>();
         _rigidbody = this.transform.GetComponent<Rigidbody2D>();
-       
+
         //skill black screen
         _tilemap = this.transform.root.Find("map").Find("tile").Find("ground").GetComponent<Tilemap>();
         _background = new SpriteRenderer[3];
@@ -63,50 +65,70 @@ public class CharacterBehavior : MonoBehaviour
         //skill camera reverse
         camera_transform = this.transform.root.Find("Camera").GetComponent<Transform>();
         camera_controller = this.transform.root.Find("Camera").GetComponent<CameraController>();
+        camera_flip = camera_controller.camera_flip;
     }
-    
-    
+
+
     // Physics engine Updates
     // Refer: https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html
-    void FixedUpdate(){
+
+    public bool cam = false;
+
+    void FixedUpdate()
+    {
         Move();
         Jump();
         DownJump();
         InfiniteJump();
-        
+        if (_hp == 0)
+        {
+            Revive();
+        }
+
     }
 
-    
+    void Revive()
+    {
+        StartCoroutine(ReviveTimer());
+    }
 
-    // void OnTriggerEnter2D(Collider2D other){
-    //     if (other.CompareTag("Ground")){}
-    // }
+    private IEnumerator ReviveTimer()
+    {
+        _hp = 2;
+        yield return new WaitForSeconds(5f);
+        Vector3 Target = new Vector3(this.transform.position.x - 50, this.transform.root.Find("ReviveY").transform.position.y, camera_flip ? -100 : 100);
+        this.transform.position = Target;
+        cam = true;
+        yield return new WaitForSeconds(0.2f);
+        _animator.Play("Idle");
+    }
 
-    // void OnTriggerExit2D(Collider2D other){
-    //     //if (other.CompareTag("Ground")){}
-    // }
 
-    
     // [Character control]
     // controlled in FixedUpdate because character has Rigidbody
-    void Move(){
+    void Move()
+    {
         Vector3 moveVelocity = Vector3.zero;
-        
-        if(update_left){
+
+        if (update_left)
+        {
             moveVelocity = Vector3.left;
             transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0, transform.rotation.z));
-        }else if(update_right){
+        }
+        else if (update_right)
+        {
             moveVelocity = Vector3.right;
             transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 180, transform.rotation.z));
         }
         transform.position += moveVelocity * move_power * Time.deltaTime;
-        
+
         update_left = false;
         update_right = false;
     }
 
-    void Jump(){
-        if(!update_jump)
+    void Jump()
+    {
+        if (!update_jump)
             return;
 
         _rigidbody.velocity = Vector2.zero;
@@ -117,53 +139,60 @@ public class CharacterBehavior : MonoBehaviour
         update_jump = false;
     }
 
-    void DownJump(){
-        if(!update_down_jump)
+    void DownJump()
+    {
+        if (!update_down_jump)
             return;
 
         _rigidbody.velocity = Vector2.zero;
         _capsulle_collider.enabled = false;
-        
+
         Vector2 jumpVelocity = new Vector2(0, -jump_power);
         _rigidbody.AddForce(jumpVelocity, ForceMode2D.Impulse);
-        
+
         StartCoroutine(GroundCapsulleColliderTimmerFuc());
         update_down_jump = false;
     }
 
-    IEnumerator GroundCapsulleColliderTimmerFuc(){
+    IEnumerator GroundCapsulleColliderTimmerFuc()
+    {
         yield return new WaitForSeconds(0.066f);
         _capsulle_collider.enabled = true;
     }
     private int infinite_jump_count = 0;
 
-    private void InfiniteJump(){
-        if(!skill_jump)
+    private void InfiniteJump()
+    {
+        if (!skill_jump)
             return;
         StartCoroutine(InfiniteJumpTimer());
-        if(infinite_jump_count > 100){
+        if (infinite_jump_count > 100)
+        {
             skill_jump = false;
             infinite_jump_count = 0;
         }
     }
-    IEnumerator InfiniteJumpTimer(){
-        if(is_ground)
+    IEnumerator InfiniteJumpTimer()
+    {
+        if (is_ground)
         {
-            update_jump = true;   
+            update_jump = true;
             infinite_jump_count++;
             jump_count = 1;
             // Debug.Log(infinite_jump_count);
-            _animator.Play("Jump");     
+            _animator.Play("Jump");
         }
         yield return new WaitUntil(() => is_ground);
     }
 
-    protected IEnumerator SkillTimer(){
+    protected IEnumerator SkillTimer()
+    {
         yield return new WaitForSeconds(_skill.getTime());
         _skill.Skill1(false);
     }
 
-    protected IEnumerator AttackTimer(){
+    protected IEnumerator AttackTimer()
+    {
         yield return new WaitForSeconds(1f);
         is_attacking = false;
     }

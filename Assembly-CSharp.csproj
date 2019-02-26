@@ -60,6 +60,7 @@
      <Compile Include="Assets\Animal\PlayerDetect.cs" />
      <Compile Include="Assets\Character\Scripts\American.cs" />
      <Compile Include="Assets\Character\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Character\Scripts\character_create.cs" />
      <Compile Include="Assets\Character\Scripts\CharacterBehavior.cs" />
      <Compile Include="Assets\Character\Scripts\Egyptian.cs" />
      <Compile Include="Assets\Character\Scripts\European.cs" />

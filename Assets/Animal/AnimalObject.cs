@@ -36,7 +36,13 @@ public class AnimalObject : MonoBehaviour
     {
         _stateMachine = new StateMachine<AnimalObject>(this);
         StartCoroutine(_stateMachine.Coroutine<IdleState>());
-        obj_player = GameObject.Find("Player1");
+        if(this.transform.root.name == "P1"){
+            obj_player = GameObject.Find("Player1");
+        }
+        else if(this.transform.root.name == "P2"){
+            obj_player = GameObject.Find("Player2");
+        }
+        Debug.Log(obj_player);
     }
 
     // Update is called once per frame

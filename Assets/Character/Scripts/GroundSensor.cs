@@ -7,15 +7,11 @@ public class GroundSensor : MonoBehaviour{
 
     private CharacterBehavior player;
     
-    void Awake (){
+    void Start (){
         if(this.transform.root.name == "P1")
             player = this.transform.root.Find("Player1").GetComponent<CharacterBehavior>();
         else if(this.transform.root.name == "P2")
             player = this.transform.root.Find("Player2").GetComponent<CharacterBehavior>();
-    }
-
-    void Start(){
-        
     }
     
     void Update(){

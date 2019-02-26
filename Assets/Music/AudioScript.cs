@@ -30,7 +30,7 @@ public class AudioScript : MonoBehaviour
             winner_player_camera_x_posion = player2_camera_x_posion;
         else if(player1_camera_x_posion > player2_camera_x_posion)
             winner_player_camera_x_posion = player1_camera_x_posion;
-        Debug.Log(winner_player_camera_x_posion);
+       // Debug.Log(winner_player_camera_x_posion);
         
         if(winner_player_camera_x_posion > 0 && winner_player_camera_x_posion < 373 && m_play1){
             m_MyAudioSource.Play();

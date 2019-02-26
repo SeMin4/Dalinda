@@ -1274,7 +1274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 408609433}
   m_Layer: 9
-  m_Name: American
+  m_Name: Cuban
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2081,7 +2081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 651082067}
   m_Layer: 9
-  m_Name: NorthAmerican
+  m_Name: Peruvian
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2479,7 +2479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 753098132}
   m_Layer: 9
-  m_Name: NorthAmerican
+  m_Name: Peruvian
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4413,7 +4413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1355682289}
   m_Layer: 9
-  m_Name: American
+  m_Name: Cuban
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
