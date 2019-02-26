@@ -33,12 +33,24 @@ public class Player2 : CharacterBehavior{
             default:
             break;           
         }
+        StartCoroutine(CheckDie());
     }
 
     void Update(){
         UserInput();
     }
-
+    IEnumerator CheckDie() {
+        while (true) {
+            if(_hp <= 0){
+                _hp = 3;
+                dead = true;
+                _animator.Play("Die");
+                Debug.Log("P2 Die");
+                yield return StartCoroutine(Revive());
+            }
+            yield return null;
+        }
+    }
     private bool one = true;
     
     void OnCollisionEnter2D(Collision2D other){
@@ -46,11 +58,6 @@ public class Player2 : CharacterBehavior{
             _hp--;
             StartCoroutine(BeatTimer());
             Debug.Log("P2 "+_hp);
-
-            if(_hp <= 0){
-                _animator.Play("Die");
-                Debug.Log("P2 Die");
-            }
         }
     }
     protected IEnumerator BeatTimer(){
@@ -129,6 +136,9 @@ public class Player2 : CharacterBehavior{
 
         // Skill 1
         if (Input.GetKey(KeyCode.Quote)){
+            if(is_skill)
+                return;
+            is_skill = true;
             _animator.Play("Attack");
             _skill.Skill1(true);
             StartCoroutine(SkillTimer());

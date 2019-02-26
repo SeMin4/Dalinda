@@ -9,6 +9,7 @@ TagManager:
   - Block
   - Camera
   - finish
+  - Trap
   layers:
   - Default
   - TransparentFX

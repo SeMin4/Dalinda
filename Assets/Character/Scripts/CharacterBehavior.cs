@@ -14,6 +14,7 @@ public class CharacterBehavior : MonoBehaviour
 
     public Skill _skill;
     public bool is_skill;
+    public bool dead;
 
     public int _hp = 3;
 
@@ -80,26 +81,18 @@ public class CharacterBehavior : MonoBehaviour
         Jump();
         DownJump();
         InfiniteJump();
-        if (_hp == 0)
-        {
-            Revive();
-        }
-
     }
-
-    void Revive()
+    protected IEnumerator Revive()
     {
-        StartCoroutine(ReviveTimer());
-    }
-
-    private IEnumerator ReviveTimer()
-    {
-        _hp = 2;
         yield return new WaitForSeconds(5f);
-        Vector3 Target = new Vector3(this.transform.position.x - 50, this.transform.root.Find("ReviveY").transform.position.y, camera_flip ? -100 : 100);
+        float posx = this.transform.position.x;
+        Transform Revive = this.transform.root.Find("ReviveY");
+        Debug.Log(posx);
+        Vector3 Target = new Vector3((posx <= 80f ? Revive.transform.position.x : posx - 50f), Revive.transform.position.y, 0);
         this.transform.position = Target;
         cam = true;
         yield return new WaitForSeconds(0.2f);
+        dead = false;
         _animator.Play("Idle");
     }
 
@@ -189,6 +182,7 @@ public class CharacterBehavior : MonoBehaviour
     {
         yield return new WaitForSeconds(_skill.getTime());
         _skill.Skill1(false);
+        is_skill = false;
     }
 
     protected IEnumerator AttackTimer()

@@ -35,11 +35,26 @@ public class Player1 : CharacterBehavior{
             default:
             break;           
         }
+        StartCoroutine(CheckDie());
     }
 
     void Update(){
         UserInput();
     }
+
+    IEnumerator CheckDie() {
+        while (true) {
+            if(_hp <= 0){
+                _hp = 3;
+                dead = true;
+                _animator.Play("Die");
+                Debug.Log("P1 Die");
+                yield return StartCoroutine(Revive());
+            }
+            yield return null;
+        }
+    }
+
 
     private bool one = true;
     void OnCollisionEnter2D(Collision2D other){
@@ -47,11 +62,6 @@ public class Player1 : CharacterBehavior{
             _hp--;
             StartCoroutine(BeatTimer());
             Debug.Log("P1 "+_hp);
-
-            if(_hp <= 0){
-                _animator.Play("Die");
-                Debug.Log("P1 Die");
-            }
         }
     }
     protected IEnumerator BeatTimer(){
@@ -61,17 +71,7 @@ public class Player1 : CharacterBehavior{
     }
 
     void OnCollisionStay2D(Collision2D other){
-        // bool one = true;
-        // Debug.Log("Enter");
-        // if(other.gameObject.tag == "Enemy" && one) {
-        //     one = false;
-        //     if(_hp <= 0) {
-        //         Debug.Log("Die");
-        //     }else {
-        //         _hp--;
-        //     }
-        //     Debug.Log(_hp);
-        // }
+
     }
 
     void UserInput(){
@@ -144,6 +144,9 @@ public class Player1 : CharacterBehavior{
 
         // Skill 1
         if (Input.GetKey(KeyCode.E)){
+            if(is_skill)
+                return;
+            is_skill = true;
             _animator.Play("Attack");
             _skill.Skill1(true);
             StartCoroutine(SkillTimer());
