@@ -99,11 +99,17 @@ public class Player1 : CharacterBehavior{
                     break;
                 case 1:
                     gifts[0].enabled = true;
+                    gifts[1].enabled = false;
+                    gifts[2].enabled = false;
                     break;
                 case 2:
+                    gifts[0].enabled = true;
                     gifts[1].enabled = true;
+                    gifts[2].enabled = false;
                     break;
                 case 3:
+                    gifts[0].enabled = true;
+                    gifts[1].enabled = true;
                     gifts[2].enabled = true;
                     break;
                 default: break;
@@ -118,12 +124,12 @@ public class Player1 : CharacterBehavior{
         if(other.gameObject.tag == "Enemy" && one) {
             _hp--;
             StartCoroutine(BeatTimer());
-            Debug.Log("P1 "+_hp);
+            Debug.Log("P1 hp"+_hp);
         }
         if(other.gameObject.tag == "Gift"){
             _mp++;
             Destroy(other.gameObject);
-            Debug.Log("P1 "+_mp);
+            Debug.Log("P1 mp"+_mp);
         }
     }
     protected IEnumerator BeatTimer(){
@@ -209,6 +215,8 @@ public class Player1 : CharacterBehavior{
             if(is_skill || _mp <= 0)
                 return;
             is_skill = true;
+            other_player.fire_attacked.enabled = true;
+            fire_attacking.enabled = true;
             _mp--;
             _animator.Play("Attack");
             _skill.Skill1(true);
@@ -221,6 +229,13 @@ public class Player1 : CharacterBehavior{
         //     _skill.Skill2();
         // }
     }
-    
+        protected IEnumerator SkillTimer()
+    {
+        yield return new WaitForSeconds(_skill.getTime());
+        _skill.Skill1(false);
+        is_skill = false;
+        fire_attacking.enabled = false;
+        other_player.fire_attacked.enabled = false;
+    }
     
 }

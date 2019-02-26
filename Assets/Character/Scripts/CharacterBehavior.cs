@@ -11,6 +11,8 @@ public class CharacterBehavior : MonoBehaviour
 
     public Animator _animator;
     protected CharacterBehavior other_player;
+    public SpriteRenderer fire_attacked;
+    public SpriteRenderer fire_attacking;
 
     public Skill _skill;
     public bool is_skill;
@@ -68,6 +70,11 @@ public class CharacterBehavior : MonoBehaviour
         camera_transform = this.transform.root.Find("Camera").GetComponent<Transform>();
         camera_controller = this.transform.root.Find("Camera").GetComponent<CameraController>();
         camera_flip = camera_controller.camera_flip;
+
+        fire_attacked = this.transform.Find("SkillAttack").GetComponent<SpriteRenderer>();
+        fire_attacked.enabled = false;
+        fire_attacking = this.transform.Find("SkillAvailable").GetComponent<SpriteRenderer>();
+        fire_attacking.enabled = false;
     }
 
 
@@ -179,12 +186,7 @@ public class CharacterBehavior : MonoBehaviour
         yield return new WaitUntil(() => is_ground);
     }
 
-    protected IEnumerator SkillTimer()
-    {
-        yield return new WaitForSeconds(_skill.getTime());
-        _skill.Skill1(false);
-        is_skill = false;
-    }
+
 
     protected IEnumerator AttackTimer()
     {
