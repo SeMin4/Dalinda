@@ -300,7 +300,6 @@ GameObject:
   - component: {fileID: 1398474110126454212}
   - component: {fileID: 1398474110126454208}
   - component: {fileID: 1398474110126454211}
-  - component: {fileID: 1398474110126454210}
   m_Layer: 9
   m_Name: Peruvian
   m_TagString: Player
@@ -364,33 +363,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.041904688, y: 0.25876188}
   m_Size: {x: 0.9188485, y: 1.3301783}
   m_Direction: 0
---- !u!114 &1398474110126454210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1398474110126454213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37da51716d4f9be47a75b3aaa261c692, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 0}
-  is_skill: 0
-  jump_count: 0
-  is_ground: 1
-  is_attacking: 0
-  update_jump: 0
-  is_direction_reverse: 0
-  _tilemap: {fileID: 0}
-  _background: []
-  camera_transform: {fileID: 0}
-  camera_controller: {fileID: 0}
-  skill_jump: 0
-  move_power: 5
-  jump_power: 10
-  jump: 2
 --- !u!1 &1398474110574710839
 GameObject:
   m_ObjectHideFlags: 0

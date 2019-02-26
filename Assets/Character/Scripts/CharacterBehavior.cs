@@ -17,6 +17,7 @@ public class CharacterBehavior : MonoBehaviour
     public bool dead;
 
     public int _hp = 3;
+    protected int _mp = 1;
 
     // status
     public int jump_count = 0;

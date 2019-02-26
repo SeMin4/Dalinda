@@ -33,8 +33,6 @@ public class GroundSensor : MonoBehaviour{
         }
         if (other.tag == "Block")
             player.jump_count = 0;
-<<<<<<< HEAD
-=======
         if(other.tag == "Finish"){
             GameObject.Find("Canvas/FinishText").GetComponent<Text>().text = player.name + " win! !";
             //joohan 추가
@@ -42,7 +40,6 @@ public class GroundSensor : MonoBehaviour{
             GameObject.Find("Canvas/restartButton").GetComponent<Button>().enabled = true;
             GameObject.Find("Canvas/restartButton/Text").GetComponent<Text>().enabled = true;
         }
->>>>>>> 1am
     }
 
     void OnTriggerExit2D(Collider2D other){

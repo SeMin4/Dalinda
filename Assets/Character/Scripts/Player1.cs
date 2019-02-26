@@ -2,10 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player1 : CharacterBehavior{
     
-
+    private Image[] hearts;
+    private Image[] gifts;
     void Start(){
         GameObject p1 = null;
         GameObject[] rootObjects = UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects();
@@ -15,7 +17,6 @@ public class Player1 : CharacterBehavior{
                 break;
             }
         }
-        
 
         other_player = p1.transform.Find("Player2").GetComponent<CharacterBehavior>();
     
@@ -35,7 +36,19 @@ public class Player1 : CharacterBehavior{
             default:
             break;           
         }
+        hearts = new Image[3];
+        hearts[0] = GameObject.Find("Canvas/P1/P1_heart/P1_heart1").GetComponent<Image>();
+        hearts[1] = GameObject.Find("Canvas/P1/P1_heart/P1_heart2").GetComponent<Image>();
+        hearts[2] = GameObject.Find("Canvas/P1/P1_heart/P1_heart3").GetComponent<Image>();
+
+        gifts = new Image[3];
+        gifts[0] = GameObject.Find("Canvas/P1/P1_skill/P1_skillt1").GetComponent<Image>();
+        gifts[1] = GameObject.Find("Canvas/P1/P1_skill/P1_skillt2").GetComponent<Image>();
+        gifts[2] = GameObject.Find("Canvas/P1/P1_skill/P1_skillt3").GetComponent<Image>();
+
         StartCoroutine(CheckDie());
+        StartCoroutine(CheckHp());
+        StartCoroutine(CheckMp());
     }
 
     void Update(){
@@ -54,6 +67,50 @@ public class Player1 : CharacterBehavior{
             yield return null;
         }
     }
+    IEnumerator CheckHp() {
+        while (true) {
+            switch(_hp){
+                case 0:
+                    hearts[0].enabled = false;
+                    break;
+                case 1:
+                    hearts[1].enabled = false;
+                    break;
+                case 2:
+                    hearts[2].enabled = false;
+                    break;
+                case 3:
+                    hearts[0].enabled = true;
+                    hearts[1].enabled = true;
+                    hearts[2].enabled = true;
+                    break;
+                default: break;
+            }
+            yield return null;
+        }
+    }
+    IEnumerator CheckMp() {
+        while (true) {
+            switch(_mp){
+                case 0:
+                    gifts[0].enabled = false;
+                    gifts[1].enabled = false;
+                    gifts[2].enabled = false;
+                    break;
+                case 1:
+                    gifts[0].enabled = true;
+                    break;
+                case 2:
+                    gifts[1].enabled = true;
+                    break;
+                case 3:
+                    gifts[2].enabled = true;
+                    break;
+                default: break;
+            }
+            yield return null;
+        }
+    }
 
 
     private bool one = true;
@@ -62,6 +119,11 @@ public class Player1 : CharacterBehavior{
             _hp--;
             StartCoroutine(BeatTimer());
             Debug.Log("P1 "+_hp);
+        }
+        if(other.gameObject.tag == "Gift"){
+            _mp++;
+            Destroy(other.gameObject);
+            Debug.Log("P1 "+_mp);
         }
     }
     protected IEnumerator BeatTimer(){
@@ -144,9 +206,10 @@ public class Player1 : CharacterBehavior{
 
         // Skill 1
         if (Input.GetKey(KeyCode.E)){
-            if(is_skill)
+            if(is_skill || _mp <= 0)
                 return;
             is_skill = true;
+            _mp--;
             _animator.Play("Attack");
             _skill.Skill1(true);
             StartCoroutine(SkillTimer());
