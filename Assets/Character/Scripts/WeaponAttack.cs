@@ -6,7 +6,7 @@ public class WeaponAttack : MonoBehaviour
 {
     private CharacterBehavior player;
 
-    void Awake()
+    void Start()
     {
         string me = this.transform.root.gameObject.name;
         
@@ -27,12 +27,12 @@ public class WeaponAttack : MonoBehaviour
         if(other.gameObject.tag == "Enemy" && player.is_attacking) {
             
             AnimalObject enemy = other.gameObject.GetComponent<AnimalObject>();
+            enemy._hp--;
+
             if(enemy._hp <= 0)
                 Destroy(other.gameObject);
-            else
-                enemy._hp--;
-            player.is_attacking = false;
             
+            player.is_attacking = false;
             Debug.Log("E "+enemy._hp);
         }
     }
@@ -45,9 +45,6 @@ public class WeaponAttack : MonoBehaviour
         
     }
 
-    void Start(){
-        
-    }
     // Update is called once per frame
     void Update()
     {

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Player2 : CharacterBehavior{
 
-    void Awake(){
+    void Start(){
         GameObject p2 = null;
         GameObject[] rootObjects = UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects();
         foreach (GameObject i in rootObjects){
@@ -16,12 +16,19 @@ public class Player2 : CharacterBehavior{
         }
 
         other_player = p2.transform.Find("Player1").GetComponent<CharacterBehavior>();
-        int type = 0;//GameSetting.selec_p2;
+
+        int type = GameSetting.selec_p2;
         switch(type)
         {
             case 0 : _skill = new European(this,other_player);
             break;
             case 1 : _skill = new Korean(this,other_player);
+            break;
+            case 2 : _skill = new Egyptian(this,other_player);
+            break;
+            case 3 : _skill = new American(this,other_player);
+            break;
+            case 4 : _skill = new NorthAmerican(this,other_player);
             break;
             default:
             break;           
@@ -30,16 +37,30 @@ public class Player2 : CharacterBehavior{
 
     void Update(){
         UserInput();
-        
+    }
+
+    private bool one = true;
+    
+    void OnCollisionEnter2D(Collision2D other){
+        if(other.gameObject.tag == "Enemy" && one) {
+            _hp--;
+            StartCoroutine(BeatTimer());
+            Debug.Log("P2 "+_hp);
+
+            if(_hp <= 0){
+                _animator.Play("Die");
+                Debug.Log("P2 Die");
+            }
+        }
+    }
+    protected IEnumerator BeatTimer(){
+        one = false;
+        yield return new WaitForSeconds(3f);
+        one = true;
     }
 
     void UserInput(){
         AnimatorStateInfo anim_info = _animator.GetCurrentAnimatorStateInfo(0);
-
-        // TODO remove Die
-        if (Input.GetKey(KeyCode.Alpha1)){
-            _animator.Play("Die");
-        }
 
         // die, do nothing
         if(anim_info.IsName("Die"))
