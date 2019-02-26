@@ -10,6 +10,7 @@ TagManager:
   - Camera
   - finish
   - Trap
+  - Gift
   layers:
   - Default
   - TransparentFX

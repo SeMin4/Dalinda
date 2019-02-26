@@ -90,7 +90,7 @@ Animator:
   m_GameObject: {fileID: 481807389105557436}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 14b98a1cfdccd425cb7b60ef1463a477, type: 2}
+  m_Controller: {fileID: 9100000, guid: e9ec047f8b72c3e47aa5e1a516bbad16, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2699a7e2d2efdd342bbcba1653673a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _hp: 2
   _rigidbody: {fileID: 481807389504301327}
   _spriteIdle: {fileID: 481807389907316340}
   _spriteBark: {fileID: 481807390628714726}
@@ -362,7 +363,7 @@ Animator:
   m_GameObject: {fileID: 481807390577271876}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4b0ffcdc74a664f87958d61ffc59b1ee, type: 2}
+  m_Controller: {fileID: 9100000, guid: e114b039a02082c4e9eb00288a2681ac, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -461,7 +462,7 @@ Animator:
   m_GameObject: {fileID: 481807390628714727}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 480fd6213a57f4d748c5eec9aa547567, type: 2}
+  m_Controller: {fileID: 9100000, guid: ec7de763e768e4c44bcbcc93299b84cd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
