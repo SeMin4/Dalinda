@@ -30,7 +30,7 @@ public class CameraController : MonoBehaviour
     {
         float x_position = Target.transform.position.x;
         float prev_x_poisition = edge.position.x;
-
+        camera_x_position = this.transform.position.x;
         if (prev_x_poisition - x_position < -5.8)
             camera_move = true;
         else
