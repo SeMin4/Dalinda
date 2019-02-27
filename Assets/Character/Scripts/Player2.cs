@@ -49,10 +49,18 @@ public class Player2 : CharacterBehavior{
         StartCoroutine(CheckDie());
         StartCoroutine(CheckHp());
         StartCoroutine(CheckMp());
+        StartCoroutine(FinishChecker());
     }
 
     void Update(){
         UserInput();
+    }
+    IEnumerator FinishChecker(){
+        while(true){
+            if(finish)
+                other_player._animator.Play("Die");
+            yield return null;
+        }
     }
     IEnumerator CheckDie() {
         while (true) {

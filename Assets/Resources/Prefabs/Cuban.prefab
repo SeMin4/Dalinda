@@ -667,12 +667,12 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.24997671, y: 0.6426812}
-  m_Size: {x: 0.18551753, y: 0.2481576}
-  m_Direction: 0
+  m_Offset: {x: -0.24998249, y: 0.62451386}
+  m_Size: {x: 0.45932454, y: 0.38092595}
+  m_Direction: 1
 --- !u!114 &2133594325502923277
 MonoBehaviour:
   m_ObjectHideFlags: 0

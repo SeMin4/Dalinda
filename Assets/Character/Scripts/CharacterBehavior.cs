@@ -17,6 +17,7 @@ public class CharacterBehavior : MonoBehaviour
     public Skill _skill;
     public bool is_skill;
     public bool dead;
+    public bool finish;
 
     public int _hp = 3;
     protected int _mp = 1;
@@ -186,11 +187,10 @@ public class CharacterBehavior : MonoBehaviour
         yield return new WaitUntil(() => is_ground);
     }
 
-
-
     protected IEnumerator AttackTimer()
     {
         yield return new WaitForSeconds(1f);
         is_attacking = false;
     }
+    
 }

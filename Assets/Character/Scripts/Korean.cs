@@ -12,10 +12,14 @@
     //  Speed up
     public override void Skill1(bool t)
     {
-        if(t)
+        if(t){
             me.move_power = 10f;
-        else
+            other_player.move_power = 3f;
+        }
+        else{
             me.move_power = 5f;
+            other_player.move_power = 5f;
+        }
     }
     // public override void Skill2(bool t)
     // {

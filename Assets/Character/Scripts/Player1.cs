@@ -49,12 +49,20 @@ public class Player1 : CharacterBehavior{
         StartCoroutine(CheckDie());
         StartCoroutine(CheckHp());
         StartCoroutine(CheckMp());
+        StartCoroutine(FinishChecker());
     }
 
     void Update(){
         UserInput();
     }
 
+    IEnumerator FinishChecker(){
+        while(true){
+            if(finish)
+                other_player._animator.Play("Die");
+            yield return null;
+        }
+    }
     IEnumerator CheckDie() {
         while (true) {
             if(_hp <= 0){
@@ -229,7 +237,7 @@ public class Player1 : CharacterBehavior{
         //     _skill.Skill2();
         // }
     }
-        protected IEnumerator SkillTimer()
+    protected IEnumerator SkillTimer()
     {
         yield return new WaitForSeconds(_skill.getTime());
         _skill.Skill1(false);

@@ -22,10 +22,10 @@ public class WeaponAttack : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D other){
-        if(other.gameObject.tag == "Enemy" && player.is_attacking) {
+    void OnTriggerEnter2D(Collider2D other){
+        if(other.tag == "Enemy" && player.is_attacking) {
             
-            AnimalObject enemy = other.gameObject.GetComponent<AnimalObject>();
+            AnimalObject enemy = other.GetComponent<AnimalObject>();
             enemy._hp--;
             Vector3 hit_pos = new Vector3(other.transform.position.x+50, other.transform.position.y, other.transform.position.z);
             other.transform.position = Vector3.Lerp(other.transform.position,  hit_pos, Time.deltaTime);
