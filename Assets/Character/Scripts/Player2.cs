@@ -132,16 +132,20 @@ public class Player2 : CharacterBehavior{
             StartCoroutine(BeatTimer());
             Debug.Log("P2 hp"+_hp);
         }
-        if(other.gameObject.tag == "Gift"){
-            _mp++;
-            Destroy(other.gameObject);
-            Debug.Log("P2 mp"+_mp);
-        }
     }
+
     protected IEnumerator BeatTimer(){
         one = false;
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         one = true;
+    }
+
+    void OnTriggerEnter2D(Collider2D other){
+        if(other.tag == "Gift" && _mp < 3){
+            Destroy(other.gameObject);
+            _mp++;
+            Debug.Log("P2 mp"+_mp);
+        }
     }
 
     void UserInput(){
@@ -156,12 +160,22 @@ public class Player2 : CharacterBehavior{
             return;
             
         // sit control
-        if(Input.GetKeyDown(KeyCode.DownArrow)){
-            is_sitting = true;
-            _animator.Play("Sit");
-        }else if(Input.GetKeyUp(KeyCode.DownArrow)){
-            _animator.Play("Idle");
-            is_sitting = false;
+        if(!is_direction_reverse){
+            if(Input.GetKeyDown(KeyCode.DownArrow)){
+                is_sitting = true;
+                _animator.Play("Sit");
+            }else if(Input.GetKeyUp(KeyCode.DownArrow)){
+                _animator.Play("Idle");
+                is_sitting = false;
+            }
+        }else{
+            if(Input.GetKeyDown(KeyCode.LeftArrow)){
+                is_sitting = true;
+                _animator.Play("Sit");
+            }else if(Input.GetKeyUp(KeyCode.LeftArrow)){
+                _animator.Play("Idle");
+                is_sitting = false;
+            }
         }
         
         // move control

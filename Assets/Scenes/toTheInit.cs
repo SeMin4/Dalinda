@@ -13,6 +13,8 @@ public class toTheInit : MonoBehaviour
 
     // Update is called once per frame
     public void Button(){
+        GameSetting.selec_p1 = -1;
+        GameSetting.selec_p2 = -1;
         Invoke("toTheStart",.3f);
     }
     private void toTheStart(){

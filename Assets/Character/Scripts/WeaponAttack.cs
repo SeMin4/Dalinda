@@ -34,7 +34,7 @@ public class WeaponAttack : MonoBehaviour
 
             if(enemy._hp <= 0)
             {
-                if(number == 0){
+                if(number == 0 || number == 1){
                     GameObject GiftBox;
                     Vector3 pos_animal = other.transform.position;
                     GiftBox = Instantiate (Resources.Load ("Prefabs/gift_box"), pos_animal, Quaternion.identity) as GameObject;

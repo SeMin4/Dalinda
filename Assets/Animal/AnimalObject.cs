@@ -5,7 +5,7 @@ using Lofle;
 
 public class AnimalObject : MonoBehaviour
 {
-    public int _hp = 2;
+    public int _hp = 1;
     public enum eSprite
     {
         Idle,

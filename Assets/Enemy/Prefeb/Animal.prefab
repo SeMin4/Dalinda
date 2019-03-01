@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2699a7e2d2efdd342bbcba1653673a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hp: 2
+  _hp: 1
   _rigidbody: {fileID: 481807389504301327}
   _spriteIdle: {fileID: 481807389907316340}
   _spriteBark: {fileID: 481807390628714726}
