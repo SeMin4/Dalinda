@@ -44,3 +44,4 @@ Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
 Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
 Library/ScriptAssemblies/Unity.TextMeshPro.dll
 Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+Assembly-CSharp.csproj
