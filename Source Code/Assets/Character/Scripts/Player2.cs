@@ -142,6 +142,7 @@ public class Player2 : CharacterBehavior{
 
     void OnTriggerEnter2D(Collider2D other){
         if(other.tag == "Gift" && _mp < 3){
+            Debug.Log("P2: "+other.gameObject.name);
             Destroy(other.gameObject);
             _mp++;
             Debug.Log("P2 mp"+_mp);
@@ -231,6 +232,7 @@ public class Player2 : CharacterBehavior{
             if(is_skill || _mp <= 0)
                 return;
             _mp--;
+            Debug.Log("P2 mp--"+ _mp);
             is_skill = true;
             other_player.fire_attacked.enabled = true;
             fire_attacking.enabled = true;
