@@ -37,11 +37,3 @@ sysinfo.txt
 *.unitypackage
 
 # End of https://www.gitignore.io/api/unity
-Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
-Library/assetDatabase3
-Library/ScriptAssemblies/Assembly-CSharp.dll
-Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
-Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Assembly-CSharp.csproj
